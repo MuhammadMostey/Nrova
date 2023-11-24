@@ -1,4 +1,11 @@
-import * from '../components/containerWrapper';
+import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+
 export default function Home() {
-  return ( <h1> Hello World</h1>)
+  return (
+    <MaxWidthWrapper className="">
+      <div className="py-20 mx-auto text-center flex flex-col items-center max-w-3xl">
+        Hello
+      </div>
+    </MaxWidthWrapper>
+  );
 }
